@@ -90,8 +90,6 @@ div	.html("<b>Amount: </b>" + d.size)
       div.transition()		
           .duration(500)		
           .style("opacity", 0);	
-	})                  
-	.on("mouseout", function(d) {
   	d3.select(this).style("opacity", "0.7");
 	})
     .on("click", click);
