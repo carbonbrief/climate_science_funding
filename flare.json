@@ -1,0 +1,114 @@
+{
+	"name": "",
+	"children": [
+		{
+			"name": "RCUK",
+			"label": "Research Councils UK",
+			"children": [
+				{
+					"name": "AHRC",
+					"label": "Arts and Humanities Research Council",
+					"children": [
+						{"name": "University of York", "size": 1163381},
+						{"name": "University of Aberdeen", "size": 914205},
+						{"name": "University of Nottingham", "size": 848676},
+						{"name": "Birkbeck, University of London", "size": 766559},
+						{"name": "University of Edinburgh", "size": 754447},
+						{"name": "Other", "size": 2785386}
+						]
+					},
+					{
+						"name": "BBSRC",
+						"label": "Biotechnology and Biological Sciences Research Council",
+						"children": [
+							{"name": "University of Nottingham", "size": 9810431},
+							{"name": "John Innes Centre (BBSRC)", "size": 6612877},
+							{"name": "Rothamsted Research (BBSRC)", "size": 5865839},
+							{"name": "University of York", "size": 3693438},
+							{"name": "Aberystwyth University", "size": 3544633},
+							{"name": "Other", "size": 2785386}
+							]
+						},
+						{
+							"name": "ESRC",
+							"label": "Economic and Social Research Council",
+							"children": [
+								{"name": "University of Nottingham", "size": 9810431},
+								{"name": "John Innes Centre (BBSRC)", "size": 6612877},
+								{"name": "Rothamsted Research (BBSRC)", "size": 5865839},
+								{"name": "University of York", "size": 3693438},
+								{"name": "Aberystwyth University", "size": 3544633},
+								{"name": "Other", "size": 2785386}
+								]
+							},
+							{
+								"name": "EPSRC",
+								"Label": "Engineering and Physical Sciences Research Council",
+								"children": [
+									{"name": "University of Leeds", "size": 20230562},
+									{"name": "Imperial College London", "size": 16230986},
+									{"name": "University College London", "size": 16223983},
+									{"name": "University of Cambridge", "size": 15913748},
+									{"name": "University of Manchester", "size": 14248290},
+									{"name": "Other", "size": 143789907}
+									]
+								},
+								{
+									"name": "MRC",
+									"label": "Medical Research Council",
+									"children": [
+										{"name": "University of Reading", "size": 783820},
+										{"name": "LSHTM", "size": 453390},
+										{"name": "University of Cambridge", "size": 309963}
+										]
+									},
+									{
+										"name": "NERC",
+										"label": "Natural Environment Research Council",
+										"children": [
+											{"name": "NERC British Antarctic Survey", "size": 32714911},
+											{"name": "University of Leeds", "size": 15432973},
+											{"name": "University of Reading", "size": 14983824},
+											{"name": "University of Exeter", "size": 13460026},
+											{"name": "University of Bristol", "size": 12908439},
+											{"name": "Other", "size": 169551263}
+											]
+										},
+										{
+											"name": "STFC",
+											"label": "Science and Technology Facilities Council",
+											"children": [
+												{"name": "Imperial College London", "size": 2253524},
+												{"name": "University College London", "size": 859911},
+												{"name": "University of Oxford", "size": 319471},
+												{"name": "NERC British Geological Survey", "size": 19529},
+												{"name": "University of York", "size": 15694},
+												{"name": "Other", "size": 17862}
+												]
+											}
+										]
+									},
+									{
+										"name": "EU",
+										"children": [
+											{"name": "European Commission", "size": 137484163},
+											{"name": "European Research Council", "size": 43012790}
+										]
+									},
+									{
+										"name": "Other",
+										"children": [
+											{"name": "DEFRA", "size": 26317081},
+											{"name": "Innovate UK", "size": 28278584},
+											{"name": "The Royal Society", "size": 9853746},
+											{"name": "Wellcome Trust", "size": 1913716}
+										]
+									},
+									{
+										"name": "NIHR",
+										"children": [
+											{"name": "NIHR Evaluation, Trials and Studies Coordinating Centre", "size": 971140}
+										]
+									}
+								]
+							}

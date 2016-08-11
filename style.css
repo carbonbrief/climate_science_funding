@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	border: 0;
+}
+
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+
+text {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 12px;
+  pointer-events: none;
+}
