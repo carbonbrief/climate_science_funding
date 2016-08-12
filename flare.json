@@ -39,12 +39,12 @@
 							"label": "Economic and Social Research Council",
 							"amount": "£15,319,472",
 							"children": [
-								{"name": "University of Nottingham", "size": 9810431},
-								{"name": "John Innes Centre (BBSRC)", "size": 6612877},
-								{"name": "Rothamsted Research (BBSRC)", "size": 5865839},
-								{"name": "University of York", "size": 3693438},
-								{"name": "Aberystwyth University", "size": 3544633},
-								{"name": "Other", "size": 2785386}
+								{"name": "LSE", "label": "London School of Economics and Political Science", "amount": "£10,048,591", "size": 10048591},
+								{"name": "UEA", "label": "University of East Anglia", "amount": "£712,130", "size": 712130},
+								{"name": "University of Manchester", "label": "University of Manchester", "amount": "£555,468", "size": 555468},
+								{"name": "University of Essex", "label": "University of Essex", "amount": "£470,501", "size": 470501},
+								{"name": "Scotland's Rural College", "label": "Scotland's Rural College", "amount": "£469,050", "size": 469050},
+								{"name": "Other", "label": "Other", "amount": "£3,532,782", "size": 3532782}
 								]
 							},
 							{
@@ -52,12 +52,12 @@
 								"label": "Engineering and Physical Sciences Research Council",
 								"amount": "£226,637,476",
 								"children": [
-									{"name": "University of Leeds", "size": 20230562},
-									{"name": "Imperial College London", "size": 16230986},
-									{"name": "University College London", "size": 16223983},
-									{"name": "University of Cambridge", "size": 15913748},
-									{"name": "University of Manchester", "size": 14248290},
-									{"name": "Other", "size": 143789907}
+									{"name": "University of Leeds", "label": "University of Leeds", "amount": "£20,230,562", "size": 20230562},
+									{"name": "Imperial College London", "label": "Imperial College London", "amount": "£16,230,986", "size": 16230986},
+									{"name": "UCL", "label": "University College London", "amount": "£16,223,983", "size": 16223983},
+									{"name": "University of Cambridge", "label": "University of Cambridge", "amount": "£15,913,748", "size": 15913748},
+									{"name": "University of Manchester", "label": "University of Manchester", "amount": "£14,248,290", "size": 14248290},
+									{"name": "Other", "label": "Other", "amount": "£143,789,907", "size": 143789907}
 									]
 								},
 								{
@@ -65,9 +65,9 @@
 									"label": "Medical Research Council",
 									"amount": "£1,547,173",
 									"children": [
-										{"name": "University of Reading", "size": 783820},
-										{"name": "LSHTM", "size": 453390},
-										{"name": "University of Cambridge", "size": 309963}
+										{"name": "University of Reading", "label": "University of Reading", "amount": "£783,820", "size": 783820},
+										{"name": "LSHTM", "label": "London School of Hygiene & Tropical Medicine", "amount": "£453,390", "size": 453390},
+										{"name": "University of Cambridge", "label": "Other", "amount": "£309,963", "size": 309963}
 										]
 									},
 									{
@@ -75,12 +75,12 @@
 										"label": "Natural Environment Research Council",
 										"amount": "£259,051,436",
 										"children": [
-											{"name": "NERC British Antarctic Survey", "size": 32714911},
-											{"name": "University of Leeds", "size": 15432973},
-											{"name": "University of Reading", "size": 14983824},
-											{"name": "University of Exeter", "size": 13460026},
-											{"name": "University of Bristol", "size": 12908439},
-											{"name": "Other", "size": 169551263}
+											{"name": "British Antarctic Survey", "label": "NERC British Antarctic Survey", "amount": "£32,714,911", "size": 32714911},
+											{"name": "University of Leeds", "label": "University of Leeds", "amount": "£15,432,973", "size": 15432973},
+											{"name": "University of Reading", "label": "University of Reading", "amount": "£14,983,824", "size": 14983824},
+											{"name": "University of Exeter", "label": "University of Exeter", "amount": "£13,460,026", "size": 13460026},
+											{"name": "University of Bristol", "label": "University of Bristol", "amount": "£12,908,439", "size": 12908439},
+											{"name": "Other", "label": "Other", "amount": "£169,551,263", "size": 169551263}
 											]
 										},
 										{
@@ -88,12 +88,12 @@
 											"label": "Science and Technology Facilities Council",
 											"amount": "£3,485,991",
 											"children": [
-												{"name": "Imperial College London", "size": 2253524},
-												{"name": "University College London", "size": 859911},
-												{"name": "University of Oxford", "size": 319471},
-												{"name": "NERC British Geological Survey", "size": 19529},
-												{"name": "University of York", "size": 15694},
-												{"name": "Other", "size": 17862}
+												{"name": "Imperial College London", "label": "Imperial College London", "amount": "£2,253,524", "size": 2253524},
+												{"name": "UCL", "label": "University College London", "amount": "£859,911", "size": 859911},
+												{"name": "University of Oxford", "label": "University of Oxford", "amount": "£319,471", "size": 319471},
+												{"name": "British Geological Survey", "label": "NERC British Geological Survey", "amount": "£19,529", "size": 19529},
+												{"name": "University of York", "label": "University of York", "amount": "£15,694", "size": 15694},
+												{"name": "Other", "label": "Other", "amount": "£17,862", "size": 17862}
 												]
 											}
 										]
@@ -103,17 +103,17 @@
 										"label": "European Union",
 										"amount": "£180,496,953",
 										"children": [
-											{"name": "European Commission", "size": 137484163},
-											{"name": "European Research Council", "size": 43012790}
+											{"name": "European Commission", "label": "European Commission", "amount": "£137,484,163", "size": 137484163},
+											{"name": "European Research Council", "label": "European Research Council", "amount": "£43,012,790", "size": 43012790}
 										]
 									},
 									{
 										"name": "Other",
 										"children": [
-											{"name": "DEFRA", "size": 26317081},
-											{"name": "Innovate UK", "size": 28278584},
-											{"name": "The Royal Society", "size": 9853746},
-											{"name": "Wellcome Trust", "size": 1913716}
+											{"name": "DEFRA", "label": "Department of Environment, Food and Rural Affairs", "amount": "£26,317,081", "size": 26317081},
+											{"name": "Innovate UK", "label": "Innovate UK", "amount": "£28,278,584", "size": 28278584},
+											{"name": "The Royal Society", "label": "The Royal Society", "amount": "£9,853,746", "size": 9853746},
+											{"name": "Wellcome Trust", "label": "Wellcome Trust", "amount": "£1,913,716", "size": 1913716}
 										]
 									},
 									{
