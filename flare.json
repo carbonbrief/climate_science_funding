@@ -1,37 +1,43 @@
 {
 	"name": "",
+	"label": "Total spend",
+	"amount": "£816,951,179",
 	"children": [
 		{
 			"name": "RCUK",
 			"label": "Research Councils UK",
+			"amount": "£569,119,959",
 			"children": [
 				{
 					"name": "AHRC",
 					"label": "Arts and Humanities Research Council",
+					"amount": "£7,232,654",
 					"children": [
-						{"name": "University of York", "size": 1163381},
-						{"name": "University of Aberdeen", "size": 914205},
-						{"name": "University of Nottingham", "size": 848676},
-						{"name": "Birkbeck, University of London", "size": 766559},
-						{"name": "University of Edinburgh", "size": 754447},
-						{"name": "Other", "size": 2785386}
+						{"name": "University of York", "label": "University of York", "amount": "£1,163,381", "size": 1163381},
+						{"name": "University of Aberdeen", "label": "University of Aberdeen", "amount": "£914,205", "size": 914205},
+						{"name": "University of Nottingham", "label": "University of Nottingham", "amount": "£848,676", "size": 848676},
+						{"name": "Birkbeck", "label": "Birkbeck, University of London", "amount": "£766,559", "size": 766559},
+						{"name": "University of Edinburgh", "label": "University of Edinburgh", "amount": "£754,447", "size": 754447},
+						{"name": "Other", "label": "Other", "amount": "£2,785,386", "size": 2785386}
 						]
 					},
 					{
 						"name": "BBSRC",
 						"label": "Biotechnology and Biological Sciences Research Council",
+						"amount": "£55,845,757",
 						"children": [
-							{"name": "University of Nottingham", "size": 9810431},
-							{"name": "John Innes Centre (BBSRC)", "size": 6612877},
-							{"name": "Rothamsted Research (BBSRC)", "size": 5865839},
-							{"name": "University of York", "size": 3693438},
-							{"name": "Aberystwyth University", "size": 3544633},
-							{"name": "Other", "size": 2785386}
+							{"name": "University of Nottingham", "label": "University of Nottingham", "amount": "£9,810,431", "size": 9810431},
+							{"name": "John Innes Centre", "label": "John Innes Centre (BBSRC)", "amount": "£6,612,877", "size": 6612877},
+							{"name": "Rothamsted Research", "label": "Rothamsted Research (BBSRC)", "amount": "£5,865,839", "size": 5865839},
+							{"name": "University of York", "label": "University of York", "amount": "£3,693,438", "size": 3693438},
+							{"name": "Aberystwyth University", "label": "Aberystwyth University", "amount": "£3,544,633", "size": 3544633},
+							{"name": "Other", "label": "Other", "amount": "£26,318,539", "size": 26318539}
 							]
 						},
 						{
 							"name": "ESRC",
 							"label": "Economic and Social Research Council",
+							"amount": "£15,319,472",
 							"children": [
 								{"name": "University of Nottingham", "size": 9810431},
 								{"name": "John Innes Centre (BBSRC)", "size": 6612877},
@@ -43,7 +49,7 @@
 							},
 							{
 								"name": "EPSRC",
-								"Label": "Engineering and Physical Sciences Research Council",
+								"label": "Engineering and Physical Sciences Research Council",
 								"children": [
 									{"name": "University of Leeds", "size": 20230562},
 									{"name": "Imperial College London", "size": 16230986},
@@ -90,6 +96,7 @@
 									},
 									{
 										"name": "EU",
+										"label": "European Union",
 										"children": [
 											{"name": "European Commission", "size": 137484163},
 											{"name": "European Research Council", "size": 43012790}

@@ -80,15 +80,15 @@ d3.json("flare.json", function(error, root) {
 	.duration(500)	
 	.style("opacity", 0);
 div.transition()
-	.duration(200)	
+	.duration(400)	
 	.style("opacity", .9);	
-div	.html("<b>Amount: </b>" + d.size)	 
+div	.html(d.label + ": " + "<br>" + d.amount)	 
 	.style("left", (d3.event.pageX) + "px")			 
 	.style("top", (d3.event.pageY - 28) + "px");
 })
 .on("mouseout", function(d) {		
       div.transition()		
-          .duration(500)		
+          .duration(400)		
           .style("opacity", 0);	
   	d3.select(this).style("opacity", "0.7");
 	})
