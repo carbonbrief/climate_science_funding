@@ -50,6 +50,7 @@
 							{
 								"name": "EPSRC",
 								"label": "Engineering and Physical Sciences Research Council",
+								"amount": "£226,637,476",
 								"children": [
 									{"name": "University of Leeds", "size": 20230562},
 									{"name": "Imperial College London", "size": 16230986},
@@ -62,6 +63,7 @@
 								{
 									"name": "MRC",
 									"label": "Medical Research Council",
+									"amount": "£1,547,173",
 									"children": [
 										{"name": "University of Reading", "size": 783820},
 										{"name": "LSHTM", "size": 453390},
@@ -71,6 +73,7 @@
 									{
 										"name": "NERC",
 										"label": "Natural Environment Research Council",
+										"amount": "£259,051,436",
 										"children": [
 											{"name": "NERC British Antarctic Survey", "size": 32714911},
 											{"name": "University of Leeds", "size": 15432973},
@@ -83,6 +86,7 @@
 										{
 											"name": "STFC",
 											"label": "Science and Technology Facilities Council",
+											"amount": "£3,485,991",
 											"children": [
 												{"name": "Imperial College London", "size": 2253524},
 												{"name": "University College London", "size": 859911},
@@ -97,6 +101,7 @@
 									{
 										"name": "EU",
 										"label": "European Union",
+										"amount": "£180,496,953",
 										"children": [
 											{"name": "European Commission", "size": 137484163},
 											{"name": "European Research Council", "size": 43012790}
@@ -113,9 +118,9 @@
 									},
 									{
 										"name": "NIHR",
-										"children": [
-											{"name": "NIHR Evaluation, Trials and Studies Coordinating Centre", "size": 971140}
-										]
+										"label": "National Institute for Health Research",
+										"amount": "£971,140",
+										"size": 971140
 									}
 								]
 							}
