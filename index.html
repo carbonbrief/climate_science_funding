@@ -16,17 +16,19 @@ body {
 h1 {
 	font-family: PT Sans Narrow, Arial;
 	font-weight: normal;
+	margin: 5px;
 }
 
 h2 {
 	font-family: PT Sans, Arial;
 	font-weight: normal;
 	font-size: 16px;
+	margin: 5px;
 }
 
 #title {
-	padding: 10px;
-	width: 830px;
+	margin: 10px;
+	width: 700px;
 }
 
 div.tooltip {
@@ -80,7 +82,7 @@ a:active {
 
 @media (max-width: 720px) {
 	#wrapper {width: 100%;}
-	#title {width: 100%}
+	#title {width: calc(100% - 20px);}
 }
 
 @media (max-width: 660px) {
