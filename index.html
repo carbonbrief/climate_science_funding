@@ -6,6 +6,12 @@
 <link type="text/css" rel="stylesheet" href="style.css"/>
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
 <style>
+
+body {
+	margin: 0;
+	background: white;
+}
+
 div.tooltip {
   position: absolute;	
   text-align: left;	
@@ -20,7 +26,36 @@ div.tooltip {
  pointer-events: none;
 }
 
-#wrapper {  width: 720px; height: 720px; margin: 0 auto; position: relative; background: white; 
+#wrapper {
+	width: 720px;
+	height: 720px; 
+	margin: 0 auto; 
+	position: relative; 
+	background: white;
+}
+
+#credit {
+	float: right;
+	font-family: PT Sans;
+	text-align: right;
+	margin-top: 30px;
+}
+
+a:link {
+    text-decoration: none;
+	color: #2f8fce; 
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 @media (max-width: 720px) {
@@ -31,12 +66,14 @@ div.tooltip {
 </head>
 <body>
 <div id="wrapper"></div>
+<div id="credit">By Rosamund Pearce for Carbon Brief, drawing on work by <a href='https://bl.ocks.org/mbostock/4348373'>Mike Bostock</a>, <a href='https://www.kiln.digital/'>Kiln</a> and <a href='http://stackoverflow.com/users/1241333/shawn-allen'>Shawn Allen</a>.</div>
+
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
 var width = 700,
     height = 700,
-	padding = 30,
+	padding = 40,
     radius = Math.min(width, height) / 2.2;
 
 var x = d3.scale.linear()
@@ -45,9 +82,6 @@ var x = d3.scale.linear()
 var y = d3.scale.linear()
     .range([0, radius]);
 	
-//var cScale = d3.scale.ordinal()
-//	.domain(["Atmosphere", "Ocean", "Land", "Ice", "Sun", "Gravity", "Mixed"])
-//	.range(["#7f7f7f", "#17becf", "#EFC530", "#9467bd", "#d62728", "#8c564b", "#e377c2"]);
 
 var color = d3.scale.ordinal()
   .range(["#0b4572","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
