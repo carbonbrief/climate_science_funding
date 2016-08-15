@@ -23,6 +23,10 @@ div.tooltip {
 #wrapper {  width: 720px; height: 720px; margin: 0 auto; position: relative; background: white; 
 }
 
+@media (max-width: 720px) {
+	#wrapper { width: 100%;}
+}
+
 </style>
 </head>
 <body>
@@ -32,7 +36,7 @@ div.tooltip {
 
 var width = 700,
     height = 700,
-	padding = 20,
+	padding = 30,
     radius = Math.min(width, height) / 2.2;
 
 var x = d3.scale.linear()
@@ -49,10 +53,14 @@ var color = d3.scale.ordinal()
   .range(["#0b4572","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
 
 var svg = d3.select("#wrapper").append("svg")
-    .attr("width", width + padding * 2 )
-    .attr("height", height + padding * 2)
+	.attr("id", "chart")
+//    .attr("width", width + padding * 2 )
+//    .attr("height", height + padding * 2)
+	.attr("viewBox", "0 0 " + (width + padding) + " " + (height + padding))
+	.attr("preserveAspectRatio", "xMidYMid meet")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
+	
 	
 	// Define 'div' for tooltips
 var div = d3.select("body")
@@ -154,5 +162,13 @@ function computeTextRotation(d) {
   return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
 }
 
+var chart = d3.select("#chart"),
+    aspect = chart.width() / chart.height(),
+    container = chart.parent();
+$(window).on("resize", function() {
+    var targetWidth = container.width();
+    chart.attr("width", targetWidth);
+    chart.attr("height", Math.round(targetWidth / aspect));
+}).trigger("resize");
 
 </script>
