@@ -97,13 +97,20 @@ div	.html(d.label + ": " + "<br>" + d.amount)
   	d3.select(this).style("opacity", "0.7");
 	})
     .on("click", click);
+	
+var labelFit = function(d) {
+	return x(d.x + d.dx) - x(d.x) > 0.05;
+};
+
 
   var text = g.append("text")
     .attr("transform", function(d) { return "rotate(" + computeTextRotation(d) + ")"; })
     .attr("x", function(d) { return y(d.y); })
     .attr("dx", "6") // margin
     .attr("dy", ".35em") // vertical-align
-    .text(function(d) { return d.name; });
+    .text(function(d) { return d.name; })
+	.style("fill-opacity", 1)
+			.style("fill", function(d) { return labelFit(d) ? "black" : "none"; });
 
   function click(d) {
     // fade out all text elements
