@@ -20,9 +20,13 @@ div.tooltip {
  pointer-events: none;
 }
 
+#wrapper {  width: 940px; height: 1000px; margin: 0 auto; position: relative; background: white; 
+}
+
 </style>
 </head>
 <body>
+<div id="wrapper"></div>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -44,7 +48,7 @@ var y = d3.scale.linear()
 var color = d3.scale.ordinal()
   .range(["#0b4572","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#wrapper").append("svg")
     .attr("width", width + padding * 4 )
     .attr("height", height + padding * 4)
   .append("g")
