@@ -20,7 +20,7 @@ div.tooltip {
  pointer-events: none;
 }
 
-#wrapper {  width: 940px; height: 1000px; margin: 0 auto; position: relative; background: white; 
+#wrapper {  width: 720px; height: 720px; margin: 0 auto; position: relative; background: white; 
 }
 
 </style>
@@ -30,9 +30,9 @@ div.tooltip {
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
 
-var width = 960,
+var width = 700,
     height = 700,
-	padding = 50,
+	padding = 20,
     radius = Math.min(width, height) / 2.2;
 
 var x = d3.scale.linear()
@@ -49,8 +49,8 @@ var color = d3.scale.ordinal()
   .range(["#0b4572","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
 
 var svg = d3.select("#wrapper").append("svg")
-    .attr("width", width + padding * 4 )
-    .attr("height", height + padding * 4)
+    .attr("width", width + padding * 2 )
+    .attr("height", height + padding * 2)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
 	
@@ -124,7 +124,7 @@ var labelFit = function(d) {
           if (e.x >= d.x && e.x < (d.x + d.dx)) {
             // get a selection of the associated text element
             var arcText = d3.select(this.parentNode).select("text");
-            // fade in the text element and recalculate positions
+            // fade in the text element and recalculate positions. Recalculate whether text label should be hidden.
             arcText.transition().duration(750)
               .attr("opacity", 1)
 			  .style("fill", function(d) { return labelFit(d) ? "black" : "none"; })			  
