@@ -109,6 +109,8 @@
 									},
 									{
 										"name": "Other",
+										"label": "Other",
+										"amount": "£66,363,127",
 										"children": [
 											{"name": "DEFRA", "label": "Department of Environment, Food and Rural Affairs", "amount": "£26,317,081", "size": 26317081},
 											{"name": "Innovate UK", "label": "Innovate UK", "amount": "£28,278,584", "size": 28278584},
