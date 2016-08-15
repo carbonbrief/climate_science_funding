@@ -127,9 +127,11 @@ var labelFit = function(d) {
             // fade in the text element and recalculate positions
             arcText.transition().duration(750)
               .attr("opacity", 1)
+			  .style("fill", function(d) { return labelFit(d) ? "black" : "none"; })			  
               .attr("transform", function() { return "rotate(" + computeTextRotation(e) + ")" })
               .attr("x", function(d) { return y(d.y); });
           }
+	
       });
   }
 });
