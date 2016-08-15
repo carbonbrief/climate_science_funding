@@ -12,6 +12,23 @@ body {
 	background: white;
 }
 
+
+h1 {
+	font-family: PT Sans Narrow, Arial;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: PT Sans, Arial;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#title {
+	padding: 10px;
+	width: 830px;
+}
+
 div.tooltip {
   position: absolute;	
   text-align: left;	
@@ -36,11 +53,12 @@ div.tooltip {
 
 #credit {
 	float: right;
-	font-family: PT Sans;
+	font-family: PT Sans, Arial;
 	font-size: 14px;
 	text-align: right;
 	margin-top: 30px;
 	height: 30px;
+	margin-right: 10px;
 }
 
 a:link {
@@ -61,7 +79,8 @@ a:active {
 }
 
 @media (max-width: 720px) {
-	#wrapper { width: 100%;}
+	#wrapper {width: 100%;}
+	#title {width: 100%}
 }
 
 @media (max-width: 660px) {
@@ -97,8 +116,12 @@ a:active {
 </style>
 </head>
 <body>
+<div id="title">
+	<h1>How is climate science funded in the UK?</h1>
+    <h2>Every year <b>£816,951,179</b> is spent on funding climate science research in the UK. Click on the segments of diagram to explore where the money is flowing.</h2>
+</div>
 <div id="wrapper"></div>
-<div id="credit">By <a href='https://www.carbonbrief.org/author/rospearce'>Rosamund Pearce</a> for <a href='http://www.carbonbrief.org/'>Carbon Brief</a>, drawing on work by <a href='https://bl.ocks.org/mbostock/4348373'>Mike Bostock</a>, <a href='https://www.kiln.digital/'>Kiln</a> and <a href='http://stackoverflow.com/users/1241333/shawn-allen'>Shawn Allen</a>.</div>
+<div id="credit"><p>By <a href='https://www.carbonbrief.org/author/rospearce'>Rosamund Pearce</a> for <a href='http://www.carbonbrief.org/'>Carbon Brief</a>, drawing on work by <a href='https://bl.ocks.org/mbostock/4348373'>Mike Bostock</a>, <a href='https://www.kiln.digital/'>Kiln</a> and <a href='http://stackoverflow.com/users/1241333/shawn-allen'>Shawn Allen</a>.</p></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
