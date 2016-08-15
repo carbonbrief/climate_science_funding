@@ -40,6 +40,7 @@ div.tooltip {
 	font-size: 14px;
 	text-align: right;
 	margin-top: 30px;
+	height: 30px;
 }
 
 a:link {
@@ -76,15 +77,20 @@ a:active {
 }
 
 @media (max-width: 480px) {
-	#wrapper {height: 440px;}
+	#wrapper {height: 460px;}
 }
 
 @media (max-width: 420px) {
 	#wrapper {height: 390px;}
+	#credit {font-size: 12px;}
 }
 
 @media (max-width: 380px) {
-	#wrapper {height: 340px;}
+	#wrapper {height: 350px;}
+}
+
+@media (max-width: 360px) {
+	#wrapper {height: 320px;}
 }
 
 
@@ -92,7 +98,7 @@ a:active {
 </head>
 <body>
 <div id="wrapper"></div>
-<div id="credit">By Rosamund Pearce for Carbon Brief, drawing on work by <a href='https://bl.ocks.org/mbostock/4348373'>Mike Bostock</a>, <a href='https://www.kiln.digital/'>Kiln</a> and <a href='http://stackoverflow.com/users/1241333/shawn-allen'>Shawn Allen</a>.</div>
+<div id="credit">By <a href='https://www.carbonbrief.org/author/rospearce'>Rosamund Pearce</a> for <a href='http://www.carbonbrief.org/'>Carbon Brief</a>, drawing on work by <a href='https://bl.ocks.org/mbostock/4348373'>Mike Bostock</a>, <a href='https://www.kiln.digital/'>Kiln</a> and <a href='http://stackoverflow.com/users/1241333/shawn-allen'>Shawn Allen</a>.</div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
