@@ -50,6 +50,10 @@ div.tooltip {
 	height: 720px; 
 	margin: 0 auto; 
 	position: relative;
+	background-image: url("globe.png");
+	background-size: 94.5%; 
+	background-position: 4% 26%;
+	background-repeat: no-repeat;
 }
 
 #credit {
@@ -145,7 +149,7 @@ var y = d3.scale.linear()
 //set colour scale to CB branding
 
 var color = d3.scale.ordinal()
-  .range(["#0b4572","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
+  .range(["#28597f","#2f8fce","#EFC530","#999999","#C7432B","#A14A7B", "#dd8a3e"]);
 
 var svg = d3.select("#wrapper").append("svg")
 	.attr("id", "chart")
